@@ -26,7 +26,7 @@ export const artisans: Artisan[] = [
     email: "ramaiah.devaraju@mysoremagga.in",
     whatsapp: "919845612301",
     bio: "Third-generation master weaver specializing in traditional gold zari patterns. His sarees have been worn at royal ceremonies.",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop",
+    image: "/sarees/s1.jpg",
     rating: 4.9,
     totalSarees: 312,
   },
@@ -41,7 +41,7 @@ export const artisans: Artisan[] = [
     email: "lakshmi.narayana@mysoremagga.in",
     whatsapp: "919845612302",
     bio: "Expert in intricate temple border patterns inspired by Hoysala sculptures. Her work is collected internationally.",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop",
+    image: "/sarees/s2.jpg",
     rating: 4.8,
     totalSarees: 247,
   },
@@ -56,7 +56,7 @@ export const artisans: Artisan[] = [
     email: "venkatesh.shastri@mysoremagga.in",
     whatsapp: "919845612303",
     bio: "Legendary bridal silk weaver with 42 years of expertise. His bridal sarees are considered heirlooms in Kodagu.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    image: "/sarees/s3.jpg",
     rating: 5.0,
     totalSarees: 485,
   },
@@ -71,7 +71,7 @@ export const artisans: Artisan[] = [
     email: "savitha.gowda@mysoremagga.in",
     whatsapp: "919845612304",
     bio: "Young master weaver known for breathable soft silk in pastel tones. She blends tradition with modern palettes.",
-    image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=400&fit=crop",
+    image: "/sarees/s4.jpg",
     rating: 4.7,
     totalSarees: 189,
   },
@@ -86,7 +86,7 @@ export const artisans: Artisan[] = [
     email: "krishna.iyengar@mysoremagga.in",
     whatsapp: "919845612305",
     bio: "Master of geometric patterns and royal checks. His looms produce sarees fit for Karnataka's cultural ambassadors.",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+    image: "/sarees/s5.jpg",
     rating: 4.9,
     totalSarees: 356,
   },
@@ -101,7 +101,7 @@ export const artisans: Artisan[] = [
     email: "annapoorna.devi@mysoremagga.in",
     whatsapp: "919845612306",
     bio: "Pioneer of designer silk fusion blending Mysore traditions with contemporary art motifs. Her work exhibited in Delhi and London.",
-    image: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop",
+    image: "/sarees/s6.jpg",
     rating: 4.8,
     totalSarees: 203,
   },
@@ -131,24 +131,24 @@ export interface Saree {
 
 // Curated Unsplash images of Indian silk sarees
 const sareeImages = [
-  "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&h=800&fit=crop",
-  "https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=600&h=800&fit=crop",
-  "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=600&h=800&fit=crop",
-  "https://images.unsplash.com/photo-1593030103066-0093718efeb9?w=600&h=800&fit=crop",
-  "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&h=800&fit=crop",
-  "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=600&h=800&fit=crop",
-  "https://images.unsplash.com/photo-1602214099785-3dd7e52f7f70?w=600&h=800&fit=crop",
-  "https://images.unsplash.com/photo-1614886137799-f9b5d5a17db9?w=600&h=800&fit=crop",
-  "https://images.unsplash.com/photo-1631886742625-82534f2c5ca8?w=600&h=800&fit=crop",
-  "https://images.unsplash.com/photo-1553531384-cc64ac80f931?w=600&h=800&fit=crop",
-  "https://images.unsplash.com/photo-1610561977921-99dc5c68d857?w=600&h=800&fit=crop",
-  "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=800&fit=crop",
-  "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=800&fit=crop",
-  "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=600&h=800&fit=crop",
-  "https://images.unsplash.com/photo-1622282220395-4b9a6ab2a7de?w=600&h=800&fit=crop",
+  "/sarees/s7.jpg",
+  "/sarees/s8.jpg",
+  "/sarees/s9.jpg",
+  "/sarees/s10.jpg",
+  "/sarees/s11.jpg",
+  "/sarees/s12.jpg",
+  "/sarees/s13.jpg",
+  "/sarees/s14.jpg",
+  "/sarees/s15.jpg",
+  "/sarees/s16.jpg",
+  "/sarees/s17.jpg",
+  "/sarees/s18.jpg",
+  "/sarees/s19.jpg",
+  "/sarees/s20.jpg",
+  "/sarees/s21.jpg",
 ];
 
-const getImage = (i: number) => sareeImages[i % sareeImages.length];
+const getImage = (i: number) => `/sarees/s${(i % 99) + 1}.jpg`;
 
 export const categories = [
   "All",
@@ -167,7 +167,7 @@ export const sarees: Saree[] = [
     category: "Traditional Mysore Silk", color: "Crimson Red", fabric: "Pure Mulberry Silk",
     artisanId: "a1", artisanName: "Ramaiah Devaraju", location: "Arsikere, Hassan",
     description: "Classic Mysore silk in rich crimson with traditional gold zari border. Hand-woven on pit loom over 12 days.",
-    inStock: true, stockCount: 8, image: getImage(0), badge: "Bestseller",
+    inStock: true, stockCount: 8, image: "/sarees/s22.jpg", badge: "Bestseller",
     weight: "450g", zariType: "Pure Gold Zari", occasion: "Weddings, Festivals",
     careInstructions: "Dry clean only",
   },
@@ -176,48 +176,48 @@ export const sarees: Saree[] = [
     category: "Traditional Mysore Silk", color: "Ivory Cream", fabric: "Pure Mulberry Silk",
     artisanId: "a5", artisanName: "Krishnamurthy Iyengar", location: "Srirangapatna, Mandya",
     description: "Exquisite ivory silk adorned with palace-inspired gold zari motifs. A timeless piece for special occasions.",
-    inStock: true, stockCount: 5, image: getImage(1), badge: "Heritage Pick",
+    inStock: true, stockCount: 5, image: "/sarees/s23.jpg", badge: "Heritage Pick",
     weight: "480g", zariType: "Pure Gold Zari", occasion: "Weddings, Receptions",
     careInstructions: "Dry clean only",
   },
   {
-    id: "s3", name: "Mysore Blue Royale", price: 11200,
-    category: "Traditional Mysore Silk", color: "Royal Blue", fabric: "Pure Mulberry Silk",
+    id: "s3", name: "Mysore Green Royale", price: 11200,
+    category: "Traditional Mysore Silk", color: "Royal Green ", fabric: "Pure crepe Silk",
     artisanId: "a1", artisanName: "Ramaiah Devaraju", location: "Arsikere, Hassan",
-    description: "Deep royal blue Mysore silk with classic gold checks and traditional border. Woven with 100% pure gold zari.",
-    inStock: true, stockCount: 12, image: getImage(2),
+    description: "Deep royal green Mysore silk with classic gold checks and traditional border. Woven with 100% pure gold zari.",
+    inStock: true, stockCount: 12, image: "/sarees/s24.jpg",
     weight: "440g", zariType: "Pure Gold Zari", occasion: "Festivals, Cultural Events",
   },
   {
-    id: "s4", name: "Forest Green Heritage", price: 13600,
-    category: "Traditional Mysore Silk", color: "Emerald Green", fabric: "Pure Mulberry Silk",
+    id: "s4", name: "Sap Green Heritage", price: 13600,
+    category: "Traditional Mysore Silk", color: "Sap Green", fabric: "Pure Tussar Silk",
     artisanId: "a3", artisanName: "Venkatesh Shastri", location: "Hunsur, Mysore",
-    description: "Lush forest green Mysore silk with intricate gold zari weaving. The color is achieved through organic silk dyeing.",
-    inStock: true, stockCount: 6, image: getImage(3),
+    description: "Sap green Mysore silk with intricate gold zari weaving. The color is achieved through organic silk dyeing.",
+    inStock: true, stockCount: 6, image: "/sarees/s25.jpg",
     weight: "460g", zariType: "Pure Gold Zari", occasion: "Weddings, Pooja",
   },
   {
-    id: "s5", name: "Sunset Turmeric Silk", price: 10800,
-    category: "Traditional Mysore Silk", color: "Golden Yellow", fabric: "Pure Mulberry Silk",
+    id: "s5", name: "Sunset Pink Silk", price: 10800,
+    category: "Traditional Mysore Silk", color: "Baby Pink", fabric: "Pure Mulberry Silk",
     artisanId: "a2", artisanName: "Lakshmi Narayana", location: "T. Narasipura, Mysore",
     description: "Vibrant turmeric-yellow Mysore silk with traditional sun motif zari border. Perfect for auspicious occasions.",
-    inStock: true, stockCount: 9, image: getImage(4),
+    inStock: true, stockCount: 9, image: "/sarees/s26.jpg",
     weight: "430g", zariType: "Gold Zari", occasion: "Festivals, Pujas",
   },
   {
-    id: "s6", name: "Deep Maroon Classic", price: 15200,
-    category: "Traditional Mysore Silk", color: "Deep Maroon", fabric: "Pure Mulberry Silk",
+    id: "s6", name: "Peacock Blue Classic", price: 15200,
+    category: "Traditional Mysore Silk", color: "Peacock Blue", fabric: "Pure Mulberry Silk",
     artisanId: "a5", artisanName: "Krishnamurthy Iyengar", location: "Srirangapatna, Mandya",
-    description: "Rich maroon Mysore silk, a quintessential Karnataka heirloom. Wide gold zari border with elephant motifs.",
-    inStock: true, stockCount: 4, image: getImage(5), badge: "Classic",
+    description: "Peacock blue Mysore silk, a quintessential Karnataka heirloom. Wide gold zari border with elephant motifs.",
+    inStock: true, stockCount: 4, image: "/sarees/s27.jpg", badge: "Classic",
     weight: "470g", zariType: "Pure Gold Zari", occasion: "All Occasions",
   },
   {
-    id: "s7", name: "Peacock Blue Traditional", price: 12800,
-    category: "Traditional Mysore Silk", color: "Peacock Blue", fabric: "Pure Mulberry Silk",
+    id: "s7", name: "Classic Purple Traditional", price: 12800,
+    category: "Traditional Mysore Silk", color: "Classic Purple", fabric: "Pure Mulberry Silk",
     artisanId: "a1", artisanName: "Ramaiah Devaraju", location: "Arsikere, Hassan",
-    description: "Stunning peacock blue silk with intricate peacock feather gold zari motifs throughout the pallu.",
-    inStock: true, stockCount: 7, image: getImage(6),
+    description: "Stunning classic purple silk with intricate peacock feather gold zari motifs throughout the pallu.",
+    inStock: true, stockCount: 7, image: "/sarees/s28.jpg",
     weight: "455g", zariType: "Pure Gold Zari", occasion: "Weddings, Cultural Events",
   },
   {
@@ -225,7 +225,7 @@ export const sarees: Saree[] = [
     category: "Traditional Mysore Silk", color: "Sandalwood", fabric: "Pure Mulberry Silk",
     artisanId: "a2", artisanName: "Lakshmi Narayana", location: "T. Narasipura, Mysore",
     description: "Warm sandalwood Mysore silk with delicate gold zari checks and traditional double border.",
-    inStock: true, stockCount: 11, image: getImage(7),
+    inStock: true, stockCount: 11, image: "/sarees/s29.jpg",
     weight: "445g", zariType: "Gold Zari", occasion: "Casual, Festivals",
   },
   {
@@ -233,7 +233,7 @@ export const sarees: Saree[] = [
     category: "Traditional Mysore Silk", color: "Royal Purple", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Majestic purple Mysore silk with gold zari running border and traditional pallu with floral motifs.",
-    inStock: false, stockCount: 0, image: getImage(8),
+    inStock: false, stockCount: 0, image: "/sarees/s30.jpg",
     weight: "460g", zariType: "Pure Gold Zari", occasion: "Weddings, Receptions",
   },
   {
@@ -241,7 +241,7 @@ export const sarees: Saree[] = [
     category: "Traditional Mysore Silk", color: "Brick Red", fabric: "Pure Mulberry Silk",
     artisanId: "a4", artisanName: "Savitha Gowda", location: "Maddur, Mandya",
     description: "Traditional brick red Mysore silk hand-woven with antique zari. An everyday luxury at an accessible price.",
-    inStock: true, stockCount: 15, image: getImage(9),
+    inStock: true, stockCount: 15, image: "/sarees/s31.jpg",
     weight: "420g", zariType: "Antique Zari", occasion: "Festivals, Casual Occasions",
   },
   {
@@ -249,7 +249,7 @@ export const sarees: Saree[] = [
     category: "Traditional Mysore Silk", color: "Champagne Gold", fabric: "Pure Mulberry Silk",
     artisanId: "a3", artisanName: "Venkatesh Shastri", location: "Hunsur, Mysore",
     description: "Lustrous champagne silk that gleams under light. Heavy gold zari work with Hampi ruins motif.",
-    inStock: true, stockCount: 3, image: getImage(10), badge: "Limited",
+    inStock: true, stockCount: 3, image: "/sarees/s32.jpg", badge: "Limited",
     weight: "490g", zariType: "Pure Gold Zari", occasion: "Premium Weddings",
   },
   {
@@ -257,7 +257,7 @@ export const sarees: Saree[] = [
     category: "Traditional Mysore Silk", color: "Teal", fabric: "Pure Mulberry Silk",
     artisanId: "a1", artisanName: "Ramaiah Devaraju", location: "Arsikere, Hassan",
     description: "Deep teal Mysore silk with traditional gold zari border inspired by Cauvery river patterns.",
-    inStock: true, stockCount: 8, image: getImage(11),
+    inStock: true, stockCount: 8, image: "/sarees/s33.jpg",
     weight: "450g", zariType: "Gold Zari", occasion: "Festivals, Casual",
   },
   {
@@ -265,7 +265,7 @@ export const sarees: Saree[] = [
     category: "Traditional Mysore Silk", color: "Midnight Black", fabric: "Pure Mulberry Silk",
     artisanId: "a5", artisanName: "Krishnamurthy Iyengar", location: "Srirangapatna, Mandya",
     description: "Rare black Mysore silk with wide pure gold zari border. A collector's piece with dramatic contrast.",
-    inStock: true, stockCount: 5, image: getImage(12),
+    inStock: true, stockCount: 5, image: "/sarees/s34.jpg",
     weight: "465g", zariType: "Pure Gold Zari", occasion: "Formal Events",
   },
   {
@@ -273,7 +273,7 @@ export const sarees: Saree[] = [
     category: "Traditional Mysore Silk", color: "Rose Pink", fabric: "Pure Mulberry Silk",
     artisanId: "a4", artisanName: "Savitha Gowda", location: "Maddur, Mandya",
     description: "Soft rose pink Mysore silk with delicate floral gold zari motifs. Woven by young master artisan.",
-    inStock: true, stockCount: 10, image: getImage(13),
+    inStock: true, stockCount: 10, image: "/sarees/s35.jpg",
     weight: "435g", zariType: "Gold Zari", occasion: "Casual, Festivals",
   },
   {
@@ -281,7 +281,7 @@ export const sarees: Saree[] = [
     category: "Traditional Mysore Silk", color: "Navy Blue", fabric: "Pure Mulberry Silk",
     artisanId: "a2", artisanName: "Lakshmi Narayana", location: "T. Narasipura, Mysore",
     description: "Deep navy silk with golden temple border and intricate pallu. A statement piece for important occasions.",
-    inStock: true, stockCount: 6, image: getImage(14),
+    inStock: true, stockCount: 6, image: "/sarees/s36.jpg",
     weight: "455g", zariType: "Pure Gold Zari", occasion: "Weddings, Cultural Events",
   },
   {
@@ -289,7 +289,7 @@ export const sarees: Saree[] = [
     category: "Traditional Mysore Silk", color: "Burnt Orange", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Vibrant burnt orange silk with silver-gold mixed zari border. A contemporary traditional piece.",
-    inStock: true, stockCount: 7, image: getImage(0),
+    inStock: true, stockCount: 7, image: "/sarees/s37.jpg",
     weight: "445g", zariType: "Mixed Zari", occasion: "Weddings, Festivals",
   },
   {
@@ -297,7 +297,7 @@ export const sarees: Saree[] = [
     category: "Traditional Mysore Silk", color: "Mango Yellow", fabric: "Pure Mulberry Silk",
     artisanId: "a4", artisanName: "Savitha Gowda", location: "Maddur, Mandya",
     description: "Bright mango yellow silk - the color of Karnataka summer. Simple gold border with intricate pallu.",
-    inStock: true, stockCount: 13, image: getImage(1),
+    inStock: true, stockCount: 13, image: "/sarees/s38.jpg",
     weight: "425g", zariType: "Gold Zari", occasion: "Festivals, Casual",
   },
   {
@@ -305,7 +305,7 @@ export const sarees: Saree[] = [
     category: "Traditional Mysore Silk", color: "Olive Green", fabric: "Pure Mulberry Silk",
     artisanId: "a3", artisanName: "Venkatesh Shastri", location: "Hunsur, Mysore",
     description: "Earthy olive green Mysore silk with organic feel. Natural dye with traditional gold border.",
-    inStock: true, stockCount: 9, image: getImage(2),
+    inStock: true, stockCount: 9, image: "/sarees/s39.jpg",
     weight: "440g", zariType: "Gold Zari", occasion: "Casual, Festivals",
   },
 
@@ -315,7 +315,7 @@ export const sarees: Saree[] = [
     category: "Bridal Silk", color: "Ruby Red & Gold", fabric: "Pure Mulberry Silk - Heavy",
     artisanId: "a3", artisanName: "Venkatesh Shastri", location: "Hunsur, Mysore",
     description: "Ultimate bridal saree fusing Mysore and Kanchipuram traditions. 22-day weaving, pure gold zari throughout.",
-    inStock: true, stockCount: 2, image: getImage(3), badge: "Bridal Exclusive",
+    inStock: true, stockCount: 2, image: "/sarees/s40.jpg", badge: "Bridal Exclusive",
     weight: "780g", zariType: "Pure 22K Gold Zari", occasion: "Weddings Only",
     careInstructions: "Professional dry clean only",
   },
@@ -324,7 +324,7 @@ export const sarees: Saree[] = [
     category: "Bridal Silk", color: "Royal Maroon", fabric: "Pure Mulberry Silk - Heavy",
     artisanId: "a3", artisanName: "Venkatesh Shastri", location: "Hunsur, Mysore",
     description: "Deep maroon bridal silk with intricate gold zari swan and peacock pallu. Bride's eternal choice.",
-    inStock: true, stockCount: 3, image: getImage(4), badge: "Top Bridal",
+    inStock: true, stockCount: 3, image: "/sarees/s41.jpg", badge: "Top Bridal",
     weight: "720g", zariType: "Pure Gold Zari", occasion: "Weddings",
   },
   {
@@ -332,7 +332,7 @@ export const sarees: Saree[] = [
     category: "Bridal Silk", color: "Pure Gold", fabric: "Pure Mulberry Silk - Heavy",
     artisanId: "a1", artisanName: "Ramaiah Devaraju", location: "Arsikere, Hassan",
     description: "Legendary golden bridal silk. Entire saree woven in gold tones with heavy 22K zari work. Museum quality.",
-    inStock: true, stockCount: 1, image: getImage(5), badge: "Masterpiece",
+    inStock: true, stockCount: 1, image: "/sarees/s42.jpg", badge: "Masterpiece",
     weight: "820g", zariType: "22K Gold Zari", occasion: "Grand Weddings",
   },
   {
@@ -340,7 +340,7 @@ export const sarees: Saree[] = [
     category: "Bridal Silk", color: "Ivory White", fabric: "Pure Mulberry Silk - Heavy",
     artisanId: "a3", artisanName: "Venkatesh Shastri", location: "Hunsur, Mysore",
     description: "Pristine ivory bridal silk for modern brides. Subtle gold zari with lotus and vine motifs.",
-    inStock: true, stockCount: 4, image: getImage(6),
+    inStock: true, stockCount: 4, image: "/sarees/s43.jpg",
     weight: "700g", zariType: "Pure Gold Zari", occasion: "Weddings, Engagement",
   },
   {
@@ -348,7 +348,7 @@ export const sarees: Saree[] = [
     category: "Bridal Silk", color: "Peacock Green & Gold", fabric: "Pure Mulberry Silk - Heavy",
     artisanId: "a2", artisanName: "Lakshmi Narayana", location: "T. Narasipura, Mysore",
     description: "Peacock-inspired bridal masterpiece. The entire pallu depicts a peacock in full bloom using gold zari.",
-    inStock: true, stockCount: 2, image: getImage(7), badge: "Artisan Special",
+    inStock: true, stockCount: 2, image: "/sarees/s44.jpg", badge: "Artisan Special",
     weight: "760g", zariType: "Pure Gold Zari", occasion: "Weddings",
   },
   {
@@ -356,7 +356,7 @@ export const sarees: Saree[] = [
     category: "Bridal Silk", color: "Rose & Gold", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Contemporary bridal choice in rose silk with modern geometric gold zari. For the modern traditional bride.",
-    inStock: true, stockCount: 5, image: getImage(8),
+    inStock: true, stockCount: 5, image: "/sarees/s45.jpg",
     weight: "680g", zariType: "Gold Zari", occasion: "Weddings, Reception",
   },
   {
@@ -364,7 +364,7 @@ export const sarees: Saree[] = [
     category: "Bridal Silk", color: "Midnight Blue", fabric: "Pure Mulberry Silk - Heavy",
     artisanId: "a3", artisanName: "Venkatesh Shastri", location: "Hunsur, Mysore",
     description: "Midnight blue bridal silk with silver and gold combined zari. For the bride who wants to stand out.",
-    inStock: false, stockCount: 0, image: getImage(9),
+    inStock: false, stockCount: 0, image: "/sarees/s46.jpg",
     weight: "710g", zariType: "Silver-Gold Zari", occasion: "Evening Weddings",
   },
   {
@@ -372,7 +372,7 @@ export const sarees: Saree[] = [
     category: "Bridal Silk", color: "Bright Crimson", fabric: "Pure Mulberry Silk",
     artisanId: "a1", artisanName: "Ramaiah Devaraju", location: "Arsikere, Hassan",
     description: "Vibrant crimson bridal silk with heavy zari work. Traditional choice with modern crafting.",
-    inStock: true, stockCount: 6, image: getImage(10),
+    inStock: true, stockCount: 6, image: "/sarees/s47.jpg",
     weight: "690g", zariType: "Pure Gold Zari", occasion: "Weddings",
   },
   {
@@ -380,7 +380,7 @@ export const sarees: Saree[] = [
     category: "Bridal Silk", color: "Emerald Green", fabric: "Pure Mulberry Silk - Heavy",
     artisanId: "a5", artisanName: "Krishnamurthy Iyengar", location: "Srirangapatna, Mandya",
     description: "Auspicious green bridal silk representing prosperity. Wide gold zari border with kalash motifs.",
-    inStock: true, stockCount: 3, image: getImage(11),
+    inStock: true, stockCount: 3, image: "/sarees/s48.jpg",
     weight: "730g", zariType: "Pure Gold Zari", occasion: "Weddings",
   },
   {
@@ -388,7 +388,7 @@ export const sarees: Saree[] = [
     category: "Bridal Silk", color: "Bright Orange", fabric: "Pure Mulberry Silk",
     artisanId: "a4", artisanName: "Savitha Gowda", location: "Maddur, Mandya",
     description: "Bright orange bridal silk - the color of turmeric and auspiciousness. Simple yet striking gold border.",
-    inStock: true, stockCount: 7, image: getImage(12),
+    inStock: true, stockCount: 7, image: "/sarees/s49.jpg",
     weight: "665g", zariType: "Gold Zari", occasion: "Weddings, Mehendi",
   },
   {
@@ -396,7 +396,7 @@ export const sarees: Saree[] = [
     category: "Bridal Silk", color: "Royal Purple", fabric: "Pure Mulberry Silk - Heavy",
     artisanId: "a3", artisanName: "Venkatesh Shastri", location: "Hunsur, Mysore",
     description: "Grand purple bridal silk with elaborate peacock and floral gold zari throughout. A 25-day weaving masterwork.",
-    inStock: true, stockCount: 1, image: getImage(13), badge: "Grand Masterpiece",
+    inStock: true, stockCount: 1, image: "/sarees/s50.jpg", badge: "Grand Masterpiece",
     weight: "800g", zariType: "22K Gold Zari", occasion: "Grand Weddings",
   },
   {
@@ -404,7 +404,7 @@ export const sarees: Saree[] = [
     category: "Bridal Silk", color: "Champagne", fabric: "Pure Mulberry Silk",
     artisanId: "a2", artisanName: "Lakshmi Narayana", location: "T. Narasipura, Mysore",
     description: "Understated champagne bridal silk for the minimalist bride. Clean gold border with floral motifs.",
-    inStock: true, stockCount: 4, image: getImage(14),
+    inStock: true, stockCount: 4, image: "/sarees/s51.jpg",
     weight: "680g", zariType: "Gold Zari", occasion: "Destination Weddings",
   },
   {
@@ -412,7 +412,7 @@ export const sarees: Saree[] = [
     category: "Bridal Silk", color: "Teal & Gold", fabric: "Pure Mulberry Silk - Heavy",
     artisanId: "a1", artisanName: "Ramaiah Devaraju", location: "Arsikere, Hassan",
     description: "Striking teal bridal silk with elaborate gold zari depicting the Mysore Dasara procession.",
-    inStock: true, stockCount: 2, image: getImage(0),
+    inStock: true, stockCount: 2, image: "/sarees/s52.jpg",
     weight: "740g", zariType: "Pure Gold Zari", occasion: "Premium Weddings",
   },
   {
@@ -420,7 +420,7 @@ export const sarees: Saree[] = [
     category: "Bridal Silk", color: "Tangerine", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Fresh tangerine bridal silk with contemporary zari patterns. Perfect for day weddings.",
-    inStock: true, stockCount: 5, image: getImage(1),
+    inStock: true, stockCount: 5, image: "/sarees/s53.jpg",
     weight: "670g", zariType: "Gold Zari", occasion: "Day Weddings",
   },
   {
@@ -428,7 +428,7 @@ export const sarees: Saree[] = [
     category: "Bridal Silk", color: "Magenta", fabric: "Pure Mulberry Silk",
     artisanId: "a4", artisanName: "Savitha Gowda", location: "Maddur, Mandya",
     description: "Bold magenta bridal silk for the vivacious bride. Heavy pallu with floral and vine gold zari.",
-    inStock: true, stockCount: 6, image: getImage(2),
+    inStock: true, stockCount: 6, image: "/sarees/s54.jpg",
     weight: "695g", zariType: "Gold Zari", occasion: "Weddings, Reception",
   },
   {
@@ -436,7 +436,7 @@ export const sarees: Saree[] = [
     category: "Bridal Silk", color: "Silver & White", fabric: "Pure Mulberry Silk",
     artisanId: "a5", artisanName: "Krishnamurthy Iyengar", location: "Srirangapatna, Mandya",
     description: "Rare silver zari bridal silk in pristine white. For the unconventional bride seeking ethereal elegance.",
-    inStock: true, stockCount: 2, image: getImage(3), badge: "Rare Piece",
+    inStock: true, stockCount: 2, image: "/sarees/s55.jpg", badge: "Rare Piece",
     weight: "720g", zariType: "Pure Silver Zari", occasion: "Weddings",
   },
 
@@ -446,7 +446,7 @@ export const sarees: Saree[] = [
     category: "Soft Silk", color: "Blush Pink", fabric: "Soft Mulberry Silk",
     artisanId: "a4", artisanName: "Savitha Gowda", location: "Maddur, Mandya",
     description: "Feather-light blush pink soft silk. Perfect for office wear and casual occasions. Breathable and comfortable.",
-    inStock: true, stockCount: 18, image: getImage(4), badge: "Lightweight",
+    inStock: true, stockCount: 18, image: "/sarees/s56.jpg", badge: "Lightweight",
     weight: "280g", zariType: "Light Gold Zari", occasion: "Office, Casual",
   },
   {
@@ -454,7 +454,7 @@ export const sarees: Saree[] = [
     category: "Soft Silk", color: "Sky Blue", fabric: "Soft Mulberry Silk",
     artisanId: "a4", artisanName: "Savitha Gowda", location: "Maddur, Mandya",
     description: "Light as air sky blue soft silk. Minimal zari border for an understated elegant look.",
-    inStock: true, stockCount: 20, image: getImage(5),
+    inStock: true, stockCount: 20, image: "/sarees/s57.jpg",
     weight: "260g", zariType: "Minimal Zari", occasion: "Daily Wear, Office",
   },
   {
@@ -462,7 +462,7 @@ export const sarees: Saree[] = [
     category: "Soft Silk", color: "Mint Green", fabric: "Soft Mulberry Silk",
     artisanId: "a4", artisanName: "Savitha Gowda", location: "Maddur, Mandya",
     description: "Cool mint green soft silk ideal for summer occasions. Thin border with delicate embroidery.",
-    inStock: true, stockCount: 15, image: getImage(6),
+    inStock: true, stockCount: 15, image: "/sarees/s58.jpg",
     weight: "270g", zariType: "Silver Zari", occasion: "Summer Events, Casual",
   },
   {
@@ -470,7 +470,7 @@ export const sarees: Saree[] = [
     category: "Soft Silk", color: "Lavender", fabric: "Soft Mulberry Silk",
     artisanId: "a4", artisanName: "Savitha Gowda", location: "Maddur, Mandya",
     description: "Dreamy lavender soft silk with floral motifs. A millennial favorite for weddings and parties.",
-    inStock: true, stockCount: 14, image: getImage(7),
+    inStock: true, stockCount: 14, image: "/sarees/s59.jpg",
     weight: "275g", zariType: "Light Zari", occasion: "Parties, Weddings",
   },
   {
@@ -478,7 +478,7 @@ export const sarees: Saree[] = [
     category: "Soft Silk", color: "Peach", fabric: "Soft Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Warm peach soft silk with minimal gold border. Everyday luxury that drapes beautifully.",
-    inStock: true, stockCount: 22, image: getImage(8),
+    inStock: true, stockCount: 22, image: "/sarees/s60.jpg",
     weight: "265g", zariType: "Gold Zari", occasion: "Daily Wear",
   },
   {
@@ -486,7 +486,7 @@ export const sarees: Saree[] = [
     category: "Soft Silk", color: "Aqua Teal", fabric: "Soft Mulberry Silk",
     artisanId: "a4", artisanName: "Savitha Gowda", location: "Maddur, Mandya",
     description: "Refreshing aqua teal soft silk. Contemporary color with traditional weave. Very popular among young buyers.",
-    inStock: true, stockCount: 17, image: getImage(9),
+    inStock: true, stockCount: 17, image: "/sarees/s61.jpg",
     weight: "272g", zariType: "Silver Zari", occasion: "Parties, Casual",
   },
   {
@@ -494,7 +494,7 @@ export const sarees: Saree[] = [
     category: "Soft Silk", color: "Butter Yellow", fabric: "Soft Mulberry Silk",
     artisanId: "a4", artisanName: "Savitha Gowda", location: "Maddur, Mandya",
     description: "Warm butter yellow soft silk with a gentle gold border. Perfect for summer days.",
-    inStock: true, stockCount: 19, image: getImage(10),
+    inStock: true, stockCount: 19, image: "/sarees/s62.jpg",
     weight: "260g", zariType: "Light Gold Zari", occasion: "Summer, Casual",
   },
   {
@@ -502,7 +502,7 @@ export const sarees: Saree[] = [
     category: "Soft Silk", color: "Off White", fabric: "Soft Mulberry Silk",
     artisanId: "a2", artisanName: "Lakshmi Narayana", location: "T. Narasipura, Mysore",
     description: "Pristine off-white soft silk with delicate gold thread running border. Elegant simplicity.",
-    inStock: true, stockCount: 12, image: getImage(11),
+    inStock: true, stockCount: 12, image: "/sarees/s63.jpg",
     weight: "268g", zariType: "Light Gold Thread", occasion: "Office, Casual",
   },
   {
@@ -510,7 +510,7 @@ export const sarees: Saree[] = [
     category: "Soft Silk", color: "Coral Pink", fabric: "Soft Mulberry Silk",
     artisanId: "a4", artisanName: "Savitha Gowda", location: "Maddur, Mandya",
     description: "Lively coral pink soft silk. Lightweight with beautiful drape and contemporary appeal.",
-    inStock: true, stockCount: 16, image: getImage(12),
+    inStock: true, stockCount: 16, image: "/sarees/s64.jpg",
     weight: "278g", zariType: "Gold Zari", occasion: "Festivals, Parties",
   },
   {
@@ -518,7 +518,7 @@ export const sarees: Saree[] = [
     category: "Soft Silk", color: "Turquoise", fabric: "Soft Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Bright turquoise soft silk with silver zari. A young, vibrant look for festive occasions.",
-    inStock: true, stockCount: 11, image: getImage(13),
+    inStock: true, stockCount: 11, image: "/sarees/s65.jpg",
     weight: "273g", zariType: "Silver Zari", occasion: "Festivals, Parties",
   },
   {
@@ -526,7 +526,7 @@ export const sarees: Saree[] = [
     category: "Soft Silk", color: "Sage Green", fabric: "Soft Mulberry Silk",
     artisanId: "a4", artisanName: "Savitha Gowda", location: "Maddur, Mandya",
     description: "Organic sage green soft silk. Muted, sophisticated, and perfect for modern working professionals.",
-    inStock: true, stockCount: 13, image: getImage(14),
+    inStock: true, stockCount: 13, image: "/sarees/s66.jpg",
     weight: "264g", zariType: "Minimal Zari", occasion: "Office, Casual",
   },
   {
@@ -534,7 +534,7 @@ export const sarees: Saree[] = [
     category: "Soft Silk", color: "Dusty Rose", fabric: "Soft Mulberry Silk",
     artisanId: "a4", artisanName: "Savitha Gowda", location: "Maddur, Mandya",
     description: "Muted dusty rose soft silk with delicate border. Romantic and refined for any occasion.",
-    inStock: true, stockCount: 14, image: getImage(0),
+    inStock: true, stockCount: 14, image: "/sarees/s67.jpg",
     weight: "270g", zariType: "Light Gold Zari", occasion: "Casual, Parties",
   },
   {
@@ -542,7 +542,7 @@ export const sarees: Saree[] = [
     category: "Soft Silk", color: "Slate Blue", fabric: "Soft Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Sophisticated slate blue soft silk with geometric minimal zari. Perfect for formal occasions.",
-    inStock: true, stockCount: 10, image: getImage(1),
+    inStock: true, stockCount: 10, image: "/sarees/s68.jpg",
     weight: "267g", zariType: "Silver Zari", occasion: "Formal, Office",
   },
   {
@@ -550,7 +550,7 @@ export const sarees: Saree[] = [
     category: "Soft Silk", color: "Warm Grey", fabric: "Soft Mulberry Silk",
     artisanId: "a4", artisanName: "Savitha Gowda", location: "Maddur, Mandya",
     description: "Contemporary warm grey soft silk — an unconventional choice for the fashion-forward woman.",
-    inStock: true, stockCount: 9, image: getImage(2),
+    inStock: true, stockCount: 9, image: "/sarees/s69.jpg",
     weight: "261g", zariType: "Gold Zari", occasion: "Formal, Office",
   },
   {
@@ -558,7 +558,7 @@ export const sarees: Saree[] = [
     category: "Soft Silk", color: "Lilac", fabric: "Soft Mulberry Silk",
     artisanId: "a4", artisanName: "Savitha Gowda", location: "Maddur, Mandya",
     description: "Delicate lilac soft silk with feather-light drape. Ideal for spring and summer celebrations.",
-    inStock: true, stockCount: 15, image: getImage(3),
+    inStock: true, stockCount: 15, image: "/sarees/s70.jpg",
     weight: "271g", zariType: "Light Zari", occasion: "Casual, Festivals",
   },
   {
@@ -566,7 +566,7 @@ export const sarees: Saree[] = [
     category: "Soft Silk", color: "Ivory", fabric: "Soft Mulberry Silk",
     artisanId: "a2", artisanName: "Lakshmi Narayana", location: "T. Narasipura, Mysore",
     description: "Pure ivory soft silk with minimal gold thread. Timeless, elegant, and wearable for any event.",
-    inStock: true, stockCount: 16, image: getImage(4),
+    inStock: true, stockCount: 16, image: "/sarees/s71.jpg",
     weight: "269g", zariType: "Minimal Gold Thread", occasion: "All Occasions",
   },
 
@@ -576,7 +576,7 @@ export const sarees: Saree[] = [
     category: "Temple Border Silk", color: "Vermillion Red", fabric: "Pure Mulberry Silk",
     artisanId: "a2", artisanName: "Lakshmi Narayana", location: "T. Narasipura, Mysore",
     description: "Exquisite temple border silk with Hoysala-inspired motifs. The border alone takes 5 days to weave.",
-    inStock: true, stockCount: 5, image: getImage(5), badge: "Artisan Pride",
+    inStock: true, stockCount: 5, image: "/sarees/s72.jpg", badge: "Artisan Pride",
     weight: "520g", zariType: "Pure Gold Zari", occasion: "Temple Visits, Festivals",
   },
   {
@@ -584,7 +584,7 @@ export const sarees: Saree[] = [
     category: "Temple Border Silk", color: "Cream", fabric: "Pure Mulberry Silk",
     artisanId: "a2", artisanName: "Lakshmi Narayana", location: "T. Narasipura, Mysore",
     description: "Cream silk with elaborate Belur temple motif border. Each motif depicts a Hoysala sculpture.",
-    inStock: true, stockCount: 4, image: getImage(6), badge: "Heritage Craft",
+    inStock: true, stockCount: 4, image: "/sarees/s73.jpg", badge: "Heritage Craft",
     weight: "530g", zariType: "Pure Gold Zari", occasion: "Temple, Festivals",
   },
   {
@@ -592,7 +592,7 @@ export const sarees: Saree[] = [
     category: "Temple Border Silk", color: "Dark Green", fabric: "Pure Mulberry Silk",
     artisanId: "a2", artisanName: "Lakshmi Narayana", location: "T. Narasipura, Mysore",
     description: "Dark green temple silk with intricate naga (serpent) border motifs. Sacred and beautiful.",
-    inStock: true, stockCount: 6, image: getImage(7),
+    inStock: true, stockCount: 6, image: "/sarees/s74.jpg",
     weight: "515g", zariType: "Pure Gold Zari", occasion: "Temple, Festivals",
   },
   {
@@ -600,7 +600,7 @@ export const sarees: Saree[] = [
     category: "Temple Border Silk", color: "Peacock Blue", fabric: "Pure Mulberry Silk",
     artisanId: "a2", artisanName: "Lakshmi Narayana", location: "T. Narasipura, Mysore",
     description: "Peacock blue with the famous Chamundeshwari temple border. A divine piece of Karnataka heritage.",
-    inStock: false, stockCount: 0, image: getImage(8), badge: "Divine Collection",
+    inStock: false, stockCount: 0, image: "/sarees/s75.jpg", badge: "Divine Collection",
     weight: "535g", zariType: "Pure Gold Zari", occasion: "Religious Events",
   },
   {
@@ -608,7 +608,7 @@ export const sarees: Saree[] = [
     category: "Temple Border Silk", color: "Deep Maroon", fabric: "Pure Mulberry Silk",
     artisanId: "a2", artisanName: "Lakshmi Narayana", location: "T. Narasipura, Mysore",
     description: "Maroon silk with the iconic Mysore Palace gate motif in the border. Royal and sacred.",
-    inStock: true, stockCount: 3, image: getImage(9), badge: "Royal Sacred",
+    inStock: true, stockCount: 3, image: "/sarees/s76.jpg", badge: "Royal Sacred",
     weight: "540g", zariType: "22K Gold Zari", occasion: "Weddings, Festivals",
   },
   {
@@ -616,7 +616,7 @@ export const sarees: Saree[] = [
     category: "Temple Border Silk", color: "Royal Purple", fabric: "Pure Mulberry Silk",
     artisanId: "a5", artisanName: "Krishnamurthy Iyengar", location: "Srirangapatna, Mandya",
     description: "Purple silk with elaborate Srirangapatna temple-inspired border. Historic and majestic.",
-    inStock: true, stockCount: 5, image: getImage(10),
+    inStock: true, stockCount: 5, image: "/sarees/s77.jpg",
     weight: "525g", zariType: "Pure Gold Zari", occasion: "Festivals, Weddings",
   },
   {
@@ -624,7 +624,7 @@ export const sarees: Saree[] = [
     category: "Temple Border Silk", color: "Turmeric Yellow", fabric: "Pure Mulberry Silk",
     artisanId: "a2", artisanName: "Lakshmi Narayana", location: "T. Narasipura, Mysore",
     description: "Auspicious yellow with pure gold temple border. Worn by women during Dasara celebrations.",
-    inStock: true, stockCount: 7, image: getImage(11),
+    inStock: true, stockCount: 7, image: "/sarees/s78.jpg",
     weight: "510g", zariType: "Pure Gold Zari", occasion: "Dasara, Festivals",
   },
   {
@@ -632,7 +632,7 @@ export const sarees: Saree[] = [
     category: "Temple Border Silk", color: "Ivory", fabric: "Pure Mulberry Silk",
     artisanId: "a2", artisanName: "Lakshmi Narayana", location: "T. Narasipura, Mysore",
     description: "Pure ivory with double gold temple border featuring lotus and kalash motifs.",
-    inStock: true, stockCount: 4, image: getImage(12),
+    inStock: true, stockCount: 4, image: "/sarees/s79.jpg",
     weight: "528g", zariType: "Pure Gold Zari", occasion: "Weddings, Festivals",
   },
   {
@@ -640,7 +640,7 @@ export const sarees: Saree[] = [
     category: "Temple Border Silk", color: "Deep Teal", fabric: "Pure Mulberry Silk",
     artisanId: "a5", artisanName: "Krishnamurthy Iyengar", location: "Srirangapatna, Mandya",
     description: "Deep teal with wide temple border depicting the seven hills of Tirumala. Devotional artistry.",
-    inStock: true, stockCount: 6, image: getImage(13),
+    inStock: true, stockCount: 6, image: "/sarees/s80.jpg",
     weight: "515g", zariType: "Gold Zari", occasion: "Religious, Weddings",
   },
   {
@@ -648,7 +648,7 @@ export const sarees: Saree[] = [
     category: "Temple Border Silk", color: "Navy Blue", fabric: "Pure Mulberry Silk",
     artisanId: "a2", artisanName: "Lakshmi Narayana", location: "T. Narasipura, Mysore",
     description: "Navy blue with elaborate Vijayanagara empire-inspired temple border. A collector's heritage piece.",
-    inStock: true, stockCount: 3, image: getImage(14), badge: "Heritage Collection",
+    inStock: true, stockCount: 3, image: "/sarees/s81.jpg", badge: "Heritage Collection",
     weight: "538g", zariType: "Pure Gold Zari", occasion: "Festivals, Weddings",
   },
   {
@@ -656,7 +656,7 @@ export const sarees: Saree[] = [
     category: "Temple Border Silk", color: "Saffron Orange", fabric: "Pure Mulberry Silk",
     artisanId: "a3", artisanName: "Venkatesh Shastri", location: "Hunsur, Mysore",
     description: "Saffron orange - the most sacred color - with pure gold temple border featuring deities.",
-    inStock: true, stockCount: 8, image: getImage(0),
+    inStock: true, stockCount: 8, image: "/sarees/s82.jpg",
     weight: "505g", zariType: "Pure Gold Zari", occasion: "Festivals, Religious",
   },
   {
@@ -664,7 +664,7 @@ export const sarees: Saree[] = [
     category: "Temple Border Silk", color: "Slate Grey", fabric: "Pure Mulberry Silk",
     artisanId: "a5", artisanName: "Krishnamurthy Iyengar", location: "Srirangapatna, Mandya",
     description: "Unusual grey silk with silver temple border. A modern take on traditional temple weaving.",
-    inStock: true, stockCount: 5, image: getImage(1),
+    inStock: true, stockCount: 5, image: "/sarees/s83.jpg",
     weight: "518g", zariType: "Silver Zari", occasion: "Formal, Festivals",
   },
   {
@@ -672,7 +672,7 @@ export const sarees: Saree[] = [
     category: "Temple Border Silk", color: "Deep Pink", fabric: "Pure Mulberry Silk",
     artisanId: "a2", artisanName: "Lakshmi Narayana", location: "T. Narasipura, Mysore",
     description: "Deep pink temple silk with Hampi ruins motif border. History woven into every thread.",
-    inStock: true, stockCount: 7, image: getImage(2),
+    inStock: true, stockCount: 7, image: "/sarees/s84.jpg",
     weight: "510g", zariType: "Gold Zari", occasion: "Festivals, Weddings",
   },
   {
@@ -680,7 +680,7 @@ export const sarees: Saree[] = [
     category: "Temple Border Silk", color: "Champagne", fabric: "Pure Mulberry Silk",
     artisanId: "a2", artisanName: "Lakshmi Narayana", location: "T. Narasipura, Mysore",
     description: "Champagne gold with the grandest temple border featuring Mysore palace gates and elephants.",
-    inStock: true, stockCount: 2, image: getImage(3), badge: "Grand Piece",
+    inStock: true, stockCount: 2, image: "/sarees/s85.jpg", badge: "Grand Piece",
     weight: "550g", zariType: "22K Pure Gold Zari", occasion: "Premium Events",
   },
 
@@ -690,7 +690,7 @@ export const sarees: Saree[] = [
     category: "Premium Gold Zari Silk", color: "Gold", fabric: "Pure Mulberry Silk",
     artisanId: "a1", artisanName: "Ramaiah Devaraju", location: "Arsikere, Hassan",
     description: "The pinnacle of Mysore silk. 24K gold wire used in zari. Each piece takes 30 days to weave. Museum-worthy.",
-    inStock: true, stockCount: 1, image: getImage(4), badge: "Ultra Premium",
+    inStock: true, stockCount: 1, image: "/sarees/s86.jpg", badge: "Ultra Premium",
     weight: "950g", zariType: "24K Real Gold Zari", occasion: "Royal Events",
     careInstructions: "Museum-grade preservation required",
   },
@@ -699,7 +699,7 @@ export const sarees: Saree[] = [
     category: "Premium Gold Zari Silk", color: "Crimson", fabric: "Pure Mulberry Silk",
     artisanId: "a1", artisanName: "Ramaiah Devaraju", location: "Arsikere, Hassan",
     description: "Heavy gold zari crimson silk. The zari weight alone is 200g. Extravagant and breathtaking.",
-    inStock: true, stockCount: 3, image: getImage(5), badge: "Heavy Zari",
+    inStock: true, stockCount: 3, image: "/sarees/s87.jpg", badge: "Heavy Zari",
     weight: "780g", zariType: "Heavy 22K Gold Zari", occasion: "Grand Celebrations",
   },
   {
@@ -707,7 +707,7 @@ export const sarees: Saree[] = [
     category: "Premium Gold Zari Silk", color: "Peacock Green", fabric: "Pure Mulberry Silk",
     artisanId: "a1", artisanName: "Ramaiah Devaraju", location: "Arsikere, Hassan",
     description: "Peacock green with heavy gold zari all-over design. The pallu depicts a full peacock in gold wire.",
-    inStock: true, stockCount: 2, image: getImage(6), badge: "Zari Masterpiece",
+    inStock: true, stockCount: 2, image: "/sarees/s88.jpg", badge: "Zari Masterpiece",
     weight: "830g", zariType: "22K Gold Zari All-over", occasion: "Grand Weddings",
   },
   {
@@ -715,7 +715,7 @@ export const sarees: Saree[] = [
     category: "Premium Gold Zari Silk", color: "Royal Blue", fabric: "Pure Mulberry Silk",
     artisanId: "a3", artisanName: "Venkatesh Shastri", location: "Hunsur, Mysore",
     description: "Royal blue with all-over gold zari checks and elaborate pallu. The Maharaja's court saree.",
-    inStock: true, stockCount: 3, image: getImage(7),
+    inStock: true, stockCount: 3, image: "/sarees/s89.jpg",
     weight: "790g", zariType: "Heavy Gold Zari", occasion: "Royal Events, Weddings",
   },
   {
@@ -723,7 +723,7 @@ export const sarees: Saree[] = [
     category: "Premium Gold Zari Silk", color: "Palace Maroon", fabric: "Pure Mulberry Silk",
     artisanId: "a1", artisanName: "Ramaiah Devaraju", location: "Arsikere, Hassan",
     description: "The iconic Palace Maroon with heavy gold zari. This design has been worn at Mysore Dasara for decades.",
-    inStock: true, stockCount: 2, image: getImage(8), badge: "Palace Collection",
+    inStock: true, stockCount: 2, image: "/sarees/s90.jpg", badge: "Palace Collection",
     weight: "860g", zariType: "22K Pure Gold Zari", occasion: "State Functions, Weddings",
   },
   {
@@ -731,7 +731,7 @@ export const sarees: Saree[] = [
     category: "Premium Gold Zari Silk", color: "Pure Ivory", fabric: "Pure Mulberry Silk",
     artisanId: "a3", artisanName: "Venkatesh Shastri", location: "Hunsur, Mysore",
     description: "Ivory with maximum gold zari density. The body itself is woven with gold zari butti throughout.",
-    inStock: true, stockCount: 1, image: getImage(9), badge: "Grandeur",
+    inStock: true, stockCount: 1, image: "/sarees/s91.jpg", badge: "Grandeur",
     weight: "880g", zariType: "24K Gold Zari", occasion: "Premium Weddings",
   },
   {
@@ -739,7 +739,7 @@ export const sarees: Saree[] = [
     category: "Premium Gold Zari Silk", color: "Deep Purple", fabric: "Pure Mulberry Silk",
     artisanId: "a1", artisanName: "Ramaiah Devaraju", location: "Arsikere, Hassan",
     description: "Regal purple silk with heavy all-over gold zari. The purple and gold combination is historically royal.",
-    inStock: true, stockCount: 4, image: getImage(10),
+    inStock: true, stockCount: 4, image: "/sarees/s92.jpg",
     weight: "800g", zariType: "Heavy 22K Gold Zari", occasion: "Grand Occasions",
   },
   {
@@ -747,7 +747,7 @@ export const sarees: Saree[] = [
     category: "Premium Gold Zari Silk", color: "Champagne Gold", fabric: "Pure Mulberry Silk",
     artisanId: "a1", artisanName: "Ramaiah Devaraju", location: "Arsikere, Hassan",
     description: "Champagne silk woven almost entirely in gold zari. Nearly indistinguishable from gold fabric itself.",
-    inStock: false, stockCount: 0, image: getImage(11), badge: "Sold Out",
+    inStock: false, stockCount: 0, image: "/sarees/s93.jpg", badge: "Sold Out",
     weight: "920g", zariType: "24K Gold Zari", occasion: "Museum, Special Events",
   },
   {
@@ -755,7 +755,7 @@ export const sarees: Saree[] = [
     category: "Premium Gold Zari Silk", color: "Bottle Green", fabric: "Pure Mulberry Silk",
     artisanId: "a3", artisanName: "Venkatesh Shastri", location: "Hunsur, Mysore",
     description: "Bottle green with heavy gold zari border and pallu. Traditional and impressive for grand events.",
-    inStock: true, stockCount: 3, image: getImage(12),
+    inStock: true, stockCount: 3, image: "/sarees/s94.jpg",
     weight: "785g", zariType: "22K Gold Zari", occasion: "Weddings, State Functions",
   },
   {
@@ -763,7 +763,7 @@ export const sarees: Saree[] = [
     category: "Premium Gold Zari Silk", color: "Deep Teal", fabric: "Pure Mulberry Silk",
     artisanId: "a1", artisanName: "Ramaiah Devaraju", location: "Arsikere, Hassan",
     description: "Deep teal with elaborate gold zari all-over weave. A 28-day masterwork of zari craftsmanship.",
-    inStock: true, stockCount: 2, image: getImage(13), badge: "28 Days Weave",
+    inStock: true, stockCount: 2, image: "/sarees/s95.jpg", badge: "28 Days Weave",
     weight: "845g", zariType: "22K Gold Zari All-over", occasion: "Grand Weddings",
   },
   {
@@ -771,7 +771,7 @@ export const sarees: Saree[] = [
     category: "Premium Gold Zari Silk", color: "Midnight Black", fabric: "Pure Mulberry Silk",
     artisanId: "a5", artisanName: "Krishnamurthy Iyengar", location: "Srirangapatna, Mandya",
     description: "Rare black silk with maximum gold zari. The dramatic contrast of black and gold is unmatched in luxury.",
-    inStock: true, stockCount: 1, image: getImage(14), badge: "Ultra Rare",
+    inStock: true, stockCount: 1, image: "/sarees/s96.jpg", badge: "Ultra Rare",
     weight: "870g", zariType: "22K Gold Zari", occasion: "Premium Events, Weddings",
   },
   {
@@ -779,7 +779,7 @@ export const sarees: Saree[] = [
     category: "Premium Gold Zari Silk", color: "Saffron Orange", fabric: "Pure Mulberry Silk",
     artisanId: "a3", artisanName: "Venkatesh Shastri", location: "Hunsur, Mysore",
     description: "Saffron silk with heavy gold zari border. The traditional Mysore Dasara procession saree.",
-    inStock: true, stockCount: 4, image: getImage(0),
+    inStock: true, stockCount: 4, image: "/sarees/s97.jpg",
     weight: "760g", zariType: "Heavy Gold Zari", occasion: "Dasara, Festivals",
   },
   {
@@ -787,7 +787,7 @@ export const sarees: Saree[] = [
     category: "Premium Gold Zari Silk", color: "Navy Blue", fabric: "Pure Mulberry Silk",
     artisanId: "a1", artisanName: "Ramaiah Devaraju", location: "Arsikere, Hassan",
     description: "Navy blue with grand gold zari border. Classic combination worn at Karnataka state ceremonies.",
-    inStock: true, stockCount: 3, image: getImage(1),
+    inStock: true, stockCount: 3, image: "/sarees/s98.jpg",
     weight: "810g", zariType: "22K Gold Zari", occasion: "State Events, Weddings",
   },
   {
@@ -795,7 +795,7 @@ export const sarees: Saree[] = [
     category: "Premium Gold Zari Silk", color: "Pure White", fabric: "Pure Mulberry Silk",
     artisanId: "a5", artisanName: "Krishnamurthy Iyengar", location: "Srirangapatna, Mandya",
     description: "White silk with heavy pure silver zari. Traditional wear for temple ceremonies and auspicious functions.",
-    inStock: true, stockCount: 3, image: getImage(2),
+    inStock: true, stockCount: 3, image: "/sarees/s99.jpg",
     weight: "820g", zariType: "Pure Silver Zari", occasion: "Temple, Weddings",
   },
   {
@@ -803,7 +803,7 @@ export const sarees: Saree[] = [
     category: "Premium Gold Zari Silk", color: "Deep Rose", fabric: "Pure Mulberry Silk",
     artisanId: "a3", artisanName: "Venkatesh Shastri", location: "Hunsur, Mysore",
     description: "Deep rose with heavy gold zari. The floral theme in the zari matches the petal-like color.",
-    inStock: true, stockCount: 2, image: getImage(3),
+    inStock: true, stockCount: 2, image: "/sarees/s1.jpg",
     weight: "790g", zariType: "22K Gold Zari", occasion: "Grand Occasions",
   },
   {
@@ -811,7 +811,7 @@ export const sarees: Saree[] = [
     category: "Premium Gold Zari Silk", color: "Dupion Gold", fabric: "Dupion Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Unique dupion silk with raw texture and pure gold zari. Rare, textured, and unmistakably premium.",
-    inStock: true, stockCount: 5, image: getImage(4), badge: "Unique Texture",
+    inStock: true, stockCount: 5, image: "/sarees/s2.jpg", badge: "Unique Texture",
     weight: "750g", zariType: "Gold Zari", occasion: "Formal Events, Weddings",
   },
 
@@ -821,7 +821,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Midnight Blue & Gold", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "A bold fusion of traditional Mysore weaving with contemporary geometric art. Exhibited in Delhi Design Week.",
-    inStock: true, stockCount: 6, image: getImage(5), badge: "Award Winning",
+    inStock: true, stockCount: 6, image: "/sarees/s3.jpg", badge: "Award Winning",
     weight: "520g", zariType: "Designer Zari", occasion: "Fashion Events, Parties",
   },
   {
@@ -829,7 +829,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Ombre Blue to Gold", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Groundbreaking ombre effect saree transitioning from deep blue to gold. Only artisan in India mastering this.",
-    inStock: true, stockCount: 4, image: getImage(6), badge: "Unique in India",
+    inStock: true, stockCount: 4, image: "/sarees/s4.jpg", badge: "Unique in India",
     weight: "490g", zariType: "Gradient Zari", occasion: "Fashion, Weddings",
   },
   {
@@ -837,7 +837,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Black & Gold", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Art Deco inspired Mysore silk with geometric gold zari patterns. Exhibited internationally.",
-    inStock: true, stockCount: 3, image: getImage(7), badge: "International",
+    inStock: true, stockCount: 3, image: "/sarees/s5.jpg", badge: "International",
     weight: "510g", zariType: "Geometric Gold Zari", occasion: "Fashion, Events",
   },
   {
@@ -845,7 +845,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Garden Green", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Nature-inspired design with floral and leaf motifs woven in gold. Fresh, artistic, and contemporary.",
-    inStock: true, stockCount: 7, image: getImage(8),
+    inStock: true, stockCount: 7, image: "/sarees/s6.jpg",
     weight: "480g", zariType: "Floral Gold Zari", occasion: "Garden Parties, Casual",
   },
   {
@@ -853,7 +853,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Multicolor", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Abstract expressionist patterns using natural dyes. Each piece is unique — no two are identical.",
-    inStock: true, stockCount: 2, image: getImage(9), badge: "One of a Kind",
+    inStock: true, stockCount: 2, image: "/sarees/s7.jpg", badge: "One of a Kind",
     weight: "500g", zariType: "Mixed Zari", occasion: "Art Events, Fashion",
   },
   {
@@ -861,7 +861,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Midnight Blue", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Night sky inspired silk with gold zari stars and constellation patterns. Otherworldly beauty.",
-    inStock: true, stockCount: 4, image: getImage(10),
+    inStock: true, stockCount: 4, image: "/sarees/s8.jpg",
     weight: "495g", zariType: "Star Pattern Zari", occasion: "Evening Events",
   },
   {
@@ -869,7 +869,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Antique Rose", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Mysore silk meets vintage Kantha embroidery tradition. A Bengal-Karnataka collaboration.",
-    inStock: true, stockCount: 5, image: getImage(11),
+    inStock: true, stockCount: 5, image: "/sarees/s9.jpg",
     weight: "505g", zariType: "Kantha Thread", occasion: "Cultural Events, Parties",
   },
   {
@@ -877,7 +877,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Stone White", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Inspired by Mysore palace architecture — arches, jalis, and mosaics recreated in zari.",
-    inStock: true, stockCount: 3, image: getImage(12), badge: "Architect's Pick",
+    inStock: true, stockCount: 3, image: "/sarees/s10.jpg", badge: "Architect's Pick",
     weight: "515g", zariType: "Architecture Zari", occasion: "Grand Events, Weddings",
   },
   {
@@ -885,7 +885,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Vibrant Multi", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Pop art meets heritage weaving. Bold colors and graphic patterns for the young fashion lover.",
-    inStock: true, stockCount: 6, image: getImage(13),
+    inStock: true, stockCount: 6, image: "/sarees/s11.jpg",
     weight: "475g", zariType: "Colored Thread", occasion: "Fashion, Youth Events",
   },
   {
@@ -893,7 +893,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Warm Beige", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Less is more — a single gold line border on the purest beige silk. For the connoisseur of simplicity.",
-    inStock: true, stockCount: 8, image: getImage(14), badge: "Minimalist",
+    inStock: true, stockCount: 8, image: "/sarees/s12.jpg", badge: "Minimalist",
     weight: "465g", zariType: "Single Gold Line", occasion: "Formal, Office Premium",
   },
   {
@@ -901,7 +901,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Watercolor Pastels", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Watercolor painting technique applied to silk dyeing before weaving. Truly one-of-a-kind artistic piece.",
-    inStock: true, stockCount: 2, image: getImage(0), badge: "Artisan Limited",
+    inStock: true, stockCount: 2, image: "/sarees/s13.jpg", badge: "Artisan Limited",
     weight: "488g", zariType: "Minimal Gold Thread", occasion: "Art Exhibitions, Parties",
   },
   {
@@ -909,7 +909,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Rose Gold", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Rose gold tones with modern geometric zari. A bridge between tradition and modern luxury fashion.",
-    inStock: true, stockCount: 5, image: getImage(1),
+    inStock: true, stockCount: 5, image: "/sarees/s14.jpg",
     weight: "485g", zariType: "Rose Gold Zari", occasion: "Parties, Weddings",
   },
   {
@@ -917,7 +917,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Celestial Blue", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Celestial blue with silver and gold combined zari depicting moon phases. Mystical and beautiful.",
-    inStock: true, stockCount: 4, image: getImage(2),
+    inStock: true, stockCount: 4, image: "/sarees/s15.jpg",
     weight: "492g", zariType: "Moon Silver-Gold Zari", occasion: "Evening Events",
   },
   {
@@ -925,7 +925,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Deep Burgundy", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Traditional Mysore motifs reimagined with contemporary color theory. Burgundy with gold accents.",
-    inStock: true, stockCount: 3, image: getImage(3),
+    inStock: true, stockCount: 3, image: "/sarees/s16.jpg",
     weight: "500g", zariType: "Contemporary Gold Zari", occasion: "Premium Events",
   },
   {
@@ -933,7 +933,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Emerald", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Gem-toned emerald silk with gold zari inspired by Mughal jewelry motifs. Precious and rare.",
-    inStock: true, stockCount: 5, image: getImage(4),
+    inStock: true, stockCount: 5, image: "/sarees/s17.jpg",
     weight: "498g", zariType: "Jewel Motif Zari", occasion: "Formal, Weddings",
   },
   {
@@ -941,7 +941,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Terracotta & Gold", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Mandala patterns woven throughout the entire silk body. Meditative artistry meets luxury fashion.",
-    inStock: true, stockCount: 2, image: getImage(5), badge: "Fusion Art",
+    inStock: true, stockCount: 2, image: "/sarees/s18.jpg", badge: "Fusion Art",
     weight: "510g", zariType: "Mandala Gold Zari", occasion: "Cultural, Premium Events",
   },
   {
@@ -949,7 +949,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Ochre Yellow", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Rich ochre silk with earthy tones and modern minimalist gold border. Inspired by Hampi's ancient walls.",
-    inStock: true, stockCount: 7, image: getImage(6),
+    inStock: true, stockCount: 7, image: "/sarees/s19.jpg",
     weight: "480g", zariType: "Minimal Gold Line", occasion: "Cultural Events, Casual",
   },
   {
@@ -957,7 +957,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Charcoal Blue", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Charcoal silk with revolutionary neo-heritage zari patterns combining Mysore and modern design.",
-    inStock: true, stockCount: 4, image: getImage(7), badge: "Neo Heritage",
+    inStock: true, stockCount: 4, image: "/sarees/s20.jpg", badge: "Neo Heritage",
     weight: "505g", zariType: "Neo Heritage Zari", occasion: "Fashion Weeks, Events",
   },
   {
@@ -965,7 +965,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Forest Multi-tone", fabric: "Pure Mulberry Silk",
     artisanId: "a6", artisanName: "Annapoorna Devi", location: "Mandya",
     description: "Nature-inspired forest motifs with organic dyes and gold thread. Sustainable luxury saree.",
-    inStock: true, stockCount: 6, image: getImage(8),
+    inStock: true, stockCount: 6, image: "/sarees/s21.jpg",
     weight: "490g", zariType: "Organic Gold Thread", occasion: "Eco Events, Casual",
   },
   {
@@ -973,7 +973,7 @@ export const sarees: Saree[] = [
     category: "Designer Collection", color: "Royal Tricolor", fabric: "Pure Mulberry Silk",
     artisanId: "a1", artisanName: "Ramaiah Devaraju", location: "Arsikere, Hassan",
     description: "The ultimate collectible. Collaboration between master artisan Ramaiah and designer Annapoorna. 35-day weave. Investment grade.",
-    inStock: true, stockCount: 1, image: getImage(9), badge: "Investment Piece",
+    inStock: true, stockCount: 1, image: "/sarees/s22.jpg", badge: "Investment Piece",
     weight: "980g", zariType: "22K + 24K Combined Gold Zari", occasion: "Collections, Museums, Grand Weddings",
     careInstructions: "Professional conservation care only",
   },
